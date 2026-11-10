@@ -58,7 +58,7 @@ $$t_{L,R} = \text{clip}\left( \left\lfloor \frac{d_{L,R} - 22.0}{42.0} \cdot 34 
 Close objects trigger early spikes in the cycle; distant objects trigger late spikes. During the final 15 steps (150 ms) of each cycle, sensory input is shut off completely. For a population to stay lit on the LED matrix during this window, it must sustain its own activity through recurrent self-excitation.
 
 ### 2. ALIF Neuron Model (Adaptive Leaky Integrate-and-Fire)
-Each of the 32 grid cells is represented by an excitatory population of 4 neurons ($V_{\text{exc}}$) that excite each other via a local synaptic trace ($\text{trace}_{\text{exc}}$). All 32 populations also project into a shared pool of 8 inhibitory neurons ($V_{\text{inh}}$), which feeds back a global inhibitory trace ($\text{trace}_{\text{inh}}$) to suppress competing populations.
+Each of the 32 grid cells is represented by an excitatory population of 4 neurons ($V_{\text{exc}}$) that excite each other via a local synaptic trace. All 32 populations also project into a shared pool of 8 inhibitory neurons ($V_{\text{inh}}$), which feeds back a global inhibitory trace ($\text{trace}_{\text{inh}}$) to suppress competing populations.
 
 At every time step $t$, state variables decay exponentially:
 
